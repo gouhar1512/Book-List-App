@@ -136,6 +136,7 @@
  });
  
  function openFullscreen() {
+  var elem = document.documentElement;
   if (elem.webkitRequestFullscreen)
      elem.webkitRequestFullscreen();
  }
