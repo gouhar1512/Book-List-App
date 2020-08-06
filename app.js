@@ -135,6 +135,15 @@
    }
  });
  
+ function openFullscreen() {
+  if (elem.webkitRequestFullscreen)
+     elem.webkitRequestFullscreen();
+ }
+ 
+ document.getElementById('myTitle').addEventListener('click', () => {
+    openFullscreen();
+ });
+ 
  document.getElementById('book-list').addEventListener('click', (e) => {
     //Remove book from UI
     UI.deleteBook(e.target);
